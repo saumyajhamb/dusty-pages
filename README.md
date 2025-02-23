@@ -50,9 +50,9 @@ With built-in authentication, you can create an account, log in securely, and pe
 
 ## 🎯 How It Works 
 ![HomePage](screenshots/s1.png)
-![HomePage](screenshots/s2.png)
-![HomePage](screenshots/s3.png)
-![HomePage](screenshots/s4.png)
+![HomePage](screenshots/s2.PNG)
+![HomePage](screenshots/s3.PNG)
+![HomePage](screenshots/s4.PNG)
 
 ### 🔐 Authentication 
 - Users can **sign up** with their name, email, and password.
