@@ -48,9 +48,13 @@ With built-in authentication, you can create an account, log in securely, and pe
 3. **Open `index.html` in your browser.**
 4. **Explore books, search, filter, and manage your cart!**
 
-## 🎯 How It Works
+## 🎯 How It Works 
+![HomePage](screenshots/s1.png)
+![HomePage](screenshots/s2.png)
+![HomePage](screenshots/s3.png)
+![HomePage](screenshots/s4.png)
 
-### 🔐 Authentication
+### 🔐 Authentication 
 - Users can **sign up** with their name, email, and password.
 - Password must be at least **6 characters long**.
 - User data is stored in **localStorage**.
