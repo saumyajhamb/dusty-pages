@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dusty Pages</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dusty Pages</h1>
+        <div>
+            <nav>
+                <ul id="ul">
+                    <li><a href="#" id="homeBtn">Home</a></li>
+                    <li><a href="#books">Books</a></li>
+                    <li><a href="#" id="cartBtn">Cart(<span id="cartCount">0</span>)</a></li>
+                    <li><a href="#" id="loginBtn">Login</a></li>
+                    <li><a href="#" id="signupBtn">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="welcomeMessage" style="display: none;"></div>
+        <div id="logoutContainer">
+            <a href="#" id="logoutBtn" style="display: none;">Logout</a>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search books...">
+                <button id="searchBtn">Search</button>
+            </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Dusty Pages</h2>
+            <p>Discover your next favorite book, that will stay with you long after the last page, at Dusty Pages! From classic literary masterpieces to gripping thrillers - we have it all♡</p>
+        </section>
+
+        <section id="genres">
+            <h2>Explore by Genre</h2>
+            <div class="genre-container">
+                <div class="genre-box" data-genre="literary-fiction">
+                    <img src="https://i.pinimg.com/564x/83/f5/08/83f5086a8d7bbacfd1cb9f0e1a85b20d.jpg" alt="Literary Fiction">
+                    <h3>Literary Fiction</h3>
+                </div>
+                <div class="genre-box" data-genre="contemporary-fiction">
+                    <img src="https://i.pinimg.com/736x/de/e3/7c/dee37cc8c2839f60cfd9204e66210d8b.jpg" alt="Contemporary Fiction">
+                    <h3>Contemporary Fiction</h3>
+                </div>
+                <div class="genre-box" data-genre="thriller/mystery">
+                    <img src="https://i.pinimg.com/736x/4a/c4/c8/4ac4c8427691acbff10c792182e216b6.jpg" alt="Thriller/Mystery">
+                    <h3>Thriller/Mystery</h3>
+                </div>
+                <div class="genre-box" data-genre="romance">
+                    <img src="https://i.pinimg.com/564x/40/f9/32/40f932ab473983a3e21b85c8cd23eece.jpg" alt="Romance">
+                    <h3>Romance</h3>
+                </div>
+                <div class="genre-box" data-genre="dark-academia">
+                    <img src="https://i.pinimg.com/564x/fa/8d/a9/fa8da9e11ff689b2e41a48de64f84190.jpg" alt="Dark Academia">
+                    <h3>Dark Academia</h3>
+                </div>
+                <div class="genre-box" data-genre="non-fiction">
+                    <img src="https://i.pinimg.com/736x/d1/c9/81/d1c981eb9a3ae09cb25a475e113254ad.jpg" alt="Non Fiction">
+                    <h3>Non Fiction</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="books">
+            <h2>Featured Books</h2>
+            <div id="bookList" class="book-grid"></div>
+        </section>
+    </main>
+
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="signupContent">
+                <h2>Sign up today and join our community of avid readers</h2>
+                <form id="signupForm">
+                    <input type="text" id="signupName" placeholder="Name" required>
+                    <input type="email" id="signupEmail" placeholder="Email" required>
+                    <input type="password" id="signupPassword" placeholder="Password (min 6 characters)" required minlength="6">
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p>Already signed up? <a href="#" id="showLogin">Login here</a></p>
+            </div>
+            <div id="loginContent" style="display: none;">
+                <h2>Login to your account</h2>
+                <form id="loginForm">
+                    <input type="email" id="loginEmail" placeholder="Email" required>
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#" id="showSignup">Sign up here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <p>Total: ₹<span id="cartTotal">0</span></p>
+            <button id="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Dusty Pages. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
